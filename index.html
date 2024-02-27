@@ -8,6 +8,12 @@
 <body>
     <!-- heading -->
     <h1>Universitas MDP</h1>
+
+    <!-- link navigasi -->
+    <hr>
+    <a href="daftar.html">Daftar</a>
+    <hr>
+
     <!-- paragraf -->
     <p>Universitas MDP merupakan Universitas Unggulan di kota Palembang</p>
 
@@ -56,6 +62,66 @@
             <td>umar@test.com</td>
         </tr>
     </table>
+
+    <hr>
+    <!-- colspan -->
+    <table border="1">
+        <tr>
+            <td colspan="2">R1 C1 C2</td>
+        </tr>
+        <tr>
+            <td>R2 C1</td>
+            <td>R2 C2</td>
+        </tr>
+    </table>
+    <hr>
+
+    <!-- rowspan -->
+    <table border="1">
+        <tr>
+            <td rowspan="2">R1 C1</td>
+            <td>R1 C2</td>
+        </tr>
+        <tr>
+            <td>R2 C2</td>
+        </tr>
+    </table>
+
+    <h2>Mahasiswa</h2>
+    <table border="1" width="100%">
+        <tr>
+            <th rowspan="2">No</th>
+            <th rowspan="2">Fakultas</th>
+            <th rowspan="2">Prodi</th>
+            <th colspan="2">Mahasiswa</th>
+            <th colspan="2">Kelas</th>
+        </tr>
+        <tr>
+            <th>Laki-laki</th>
+            <th>Perempuan</th>
+            <th>Pagi</th>
+            <th>Sore</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>FIKR</td>
+            <td>Informatika</td>
+            <td>400</td>
+            <td>300</td>
+            <td>350</td>
+            <td>350</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>FIKR</td>
+            <td>Sistem Informasi</td>
+            <td>500</td>
+            <td>400</td>
+            <td>450</td>
+            <td>450</td>
+        </tr>
+    </table>
+
 
     <hr>
     &copy; 2024 Pemrograman Web I
