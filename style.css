@@ -1,16 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
 /* element selector */
 /* ref: colorhunt.co */
+
+/* mobile / HP */
 body {
   background-color: #8e7ab5;
 }
 
-/* class selector */
-.col {
-  width: 25%;
-  background-color: yellow;
-  float: left;
+/* CSS tablet */
+@media screen and (min-width: 600px) {
+  body {
+    background-color: yellow;
+  }
+
+  .col-sm-6 {
+    width: 50%;
+    float: left;
+  }
+
+  .col-sm-12 {
+    width: 100%;
+    float: left;
+  }
 }
 
+/* CSS Desktop */
+@media screen and (min-width: 992px) {
+  body {
+    background-color: green;
+  }
+
+  .col-lg-3 {
+    width: 25%;
+    /* background-color: yellow; */
+    float: left;
+  }
+
+  .col-lg-4 {
+    width: 33.33%;
+    /* background-color: yellow; */
+    float: left;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+    float: left;
+  }
+}
+
+/* class selector */
 .img-responsive {
   width: 100%;
 }
@@ -32,12 +73,6 @@ body {
   border-radius: 50% 0 50% 0;
 }
 
-.col-3 {
-  width: 33.33%;
-  background-color: yellow;
-  float: left;
-}
-
 .col-7 {
   width: 66.67%;
   background-color: yellow;
@@ -48,4 +83,8 @@ body {
   content: "";
   clear: both;
   display: table;
+}
+
+.p-1 {
+  padding: 10px;
 }
